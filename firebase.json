@@ -1,0 +1,57 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "tripchat-ab96e",
+          "appId": "1:964644452587:android:5aae1ed6927a2f690ca6ae",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "tripchat-ab96e",
+          "appId": "1:964644452587:ios:5362a0d8d8ea66bd0ca6ae",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "tripchat-ab96e",
+          "appId": "1:964644452587:ios:5362a0d8d8ea66bd0ca6ae",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "tripchat-ab96e",
+          "configurations": {
+            "android": "1:964644452587:android:5aae1ed6927a2f690ca6ae",
+            "ios": "1:964644452587:ios:5362a0d8d8ea66bd0ca6ae",
+            "macos": "1:964644452587:ios:5362a0d8d8ea66bd0ca6ae",
+            "web": "1:964644452587:web:d9efa83ac6a4340e0ca6ae",
+            "windows": "1:964644452587:web:864cae92ea6c4a1c0ca6ae"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}
